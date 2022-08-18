@@ -1,0 +1,49 @@
+site_name: Umang Wellness External Docs
+
+
+theme:
+  name: material
+
+  features:
+    - navigation.indexes
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+      primary: light green
+      accent: green
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/eye-outline
+        name: Switch to light mode
+      primary: blue
+      accent: deep purple
+
+
+
+
+nav:
+    - Welcome to Umang Wellness Guides: 'index.md'
+    - General Guides:
+      - general/index.md
+      - Contact Support: 'general/contact-us.md'
+      - View FAQs: 'general/view-faqs.md'
+      - Reach Sign Up Page: 'general/reach-sign-up-page.md'
+      - Reach Sign In Page: 'general/reach-sign-in-page.md'
+      - Give Feedback: 'general/give-feedback.md'
+      - View About Section: 'general/view-about-section.md'
+      - View Cookie Policy: 'general/view-cookie-policy.md'
+      - View Terms and Conditions: 'general/view-terms-and-conditions.md'
+      - View Privacy Policy: 'general/view-privacy-policy.md'
+      - View Sitemap: 'general/view-sitemap.md'
+      - View Version History: 'general/view-version-history.md'
+  
+    
