@@ -8,6 +8,7 @@ The page can be accessed without requiring signin.
 ## Steps
 
 1. Start from the [Home Page](https://www.umangwellness.com).
+
 2. Click on the **Help us to Improve!** link in the Navbar.
 
     [![give-feedback-step-1]][give-feedback-step-1]
@@ -30,7 +31,7 @@ The page can be accessed without requiring signin.
 7. Fill _Subject_
 8. Fill _Message_
 9. Confirm _Captcha_
-10. Click _Submit_to send the form
+10. Click **Submit** to send the form
 
     [![give-feedback-step-3]][give-feedback-step-3]
     [give-feedback-step-3]: ./../img/general/give-feedback-3.png

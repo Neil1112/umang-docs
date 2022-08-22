@@ -8,6 +8,7 @@ The page can be accessed without requiring signin.
 ## Steps
 
 1. Start from the [Home Page](https://www.umangwellness.com).
+
 2. Click on the **About us** link in the Navbar.
 
     [![view-about-section-step-1]][view-about-section-step-1]
@@ -15,7 +16,7 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-3. You are now on the About us page.
+3. You are now on the _About us_ page.
 
     URL changes to - https://www.umangwellness.com/aboutus
 

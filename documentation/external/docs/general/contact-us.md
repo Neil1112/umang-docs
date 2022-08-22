@@ -8,6 +8,7 @@ The page can be accessed without requiring signin.
 ## Steps
 
 1. Start from the [Home Page](https://www.umangwellness.com).
+
 2. Click on the **Contact** link in the Navbar.
 
     [![contact-us-step-1]][contact-us-step-1]
@@ -28,7 +29,7 @@ The page can be accessed without requiring signin.
 5. Fill _Email_
 6. Fill _Message_
 7. Confirm _Captcha_
-8. Click _Submit_to send the form
+8. Click **Submit** to send the form
 
     [![contact-us-step-3]][contact-us-step-3]
     [contact-us-step-3]: ./../img/general/contact-us-3.png

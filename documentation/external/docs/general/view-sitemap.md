@@ -15,14 +15,15 @@ The page can be accessed without requiring signin.
     <br/>
 
 2. Scroll to bottom to the footer.
-3. Click on the Sitemap link in the footer.
+
+3. Click on the **Sitemap** link in the footer.
 
     [![view-sitemap-step-2]][view-sitemap-step-2]
     [view-sitemap-step-2]: ./../img/general/view-sitemap-2.png
 
     <br/>
 
-4. You are now on the Sitemap Page.
+4. You are now on the _Sitemap_ Page.
 
     URL changes to - https://www.umangwellness.com/sitemap
 
@@ -33,4 +34,4 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-Once you go through these steps, you should be able to view the Sitemap and click on any category to know more about it.
+Once you go through these steps, you should be able to view the _Sitemap_ and click on any category to know more about it.

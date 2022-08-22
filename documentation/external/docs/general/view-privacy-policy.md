@@ -15,14 +15,15 @@ The page can be accessed without requiring signin.
     <br/>
 
 2. Scroll to bottom to the footer.
-3. Click on the Privacy Policy link in the footer.
+
+3. Click on the **Privacy Policy** link in the footer.
 
     [![view-privacy-policy-step-2]][view-privacy-policy-step-2]
     [view-privacy-policy-step-2]: ./../img/general/view-privacy-policy-2.png
 
     <br/>
 
-4. You are now on the Privacy Policy Page.
+4. You are now on the _Privacy Policy_ Page.
 
     URL changes to - https://www.umangwellness.com/privacypolicy
 
@@ -31,4 +32,4 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-Once you go through these steps, you should be able to view the details of our Privacy Policy.
+Once you go through these steps, you should be able to view the details of our _Privacy Policy_.

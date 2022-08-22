@@ -17,5 +17,6 @@ Check the following links to look for guides related to these role unspecific pa
 - [View Privacy Policy](./view-privacy-policy.md)
 - [View Sitemap](./view-sitemap.md)
 - [View Version History](./view-version-history.md)
+- [View Social Links](./view-social-links.md)
 - [Gift Voucher](./gift-voucher.md)
 

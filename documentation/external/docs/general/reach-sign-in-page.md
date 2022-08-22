@@ -2,13 +2,13 @@
 
 ---
 
-This guide shows the process of reaching sign-in page.
+This guide shows the process of reaching _Sign-In_ page.
 The page can be accessed without requiring sign-in.
 
 ## Steps
 
 1. Start from the [Home Page](https://www.umangwellness.com).
-2. Click on the Sign In button.
+2. Click on the **Sign In** button.
 
     [![reach-sign-in-step-1]][reach-sign-in-step-1]
     [reach-sign-in-step-1]: ./../img/general/reach-sign-in-1.png
@@ -24,6 +24,4 @@ The page can be accessed without requiring sign-in.
 
     <br/>
 
-Once you go through these steps, you should be able to successfully reach the sign-in page and proceeed to sign-in in your Umang Wellness account.
-
-
+Once you go through these steps, you should be able to successfully reach the _Sign-In_ page and proceeed to sign-in in your Umang Wellness account.

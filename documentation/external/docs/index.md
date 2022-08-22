@@ -8,6 +8,6 @@ Check the following links to look for guides related to one of these roles and o
 
 
 - [General](./general/index.md)
-- [Client](index.md)
-- [Counsellor](index.md)
+- [Client](./client/index.md)
+- [Counsellor](./counsellor/index.md)
 

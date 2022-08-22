@@ -15,14 +15,15 @@ The page can be accessed without requiring signin.
     <br/>
 
 2. Scroll to bottom to the footer.
-3. Click on the Terms Conditions link in the footer.
+
+3. Click on the **Terms Conditions** link in the footer.
 
     [![view-terms-and-conditions-step-2]][view-terms-and-conditions-step-2]
     [view-terms-and-conditions-step-2]: ./../img/general/view-terms-and-conditions-2.png
 
     <br/>
 
-4. You are now on the Terms & Conditions Page.
+4. You are now on the _Terms & Conditions_ Page.
 
     URL changes to - https://www.umangwellness.com/termsconditions
 
@@ -31,4 +32,4 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-Once you go through these steps, you should be able to view the details of our Terms and Conditions.
+Once you go through these steps, you should be able to view the details of our _Terms and Conditions_.

@@ -2,7 +2,7 @@
 
 ---
 
-This guide shows the process of viewing the Umang Wellness Cookie Policy.
+This guide shows the process of viewing the Umang Wellness _Cookie Policy_.
 The page can be accessed without requiring signin.
 
 ## Steps
@@ -15,14 +15,15 @@ The page can be accessed without requiring signin.
     <br/>
 
 2. Scroll to bottom to the footer.
-3. Click on the Cookie Policy link in the footer.
+
+3. Click on the **Cookie Policy** link in the footer.
 
     [![view-cookie-policy-step-2]][view-cookie-policy-step-2]
     [view-cookie-policy-step-2]: ./../img/general/view-cookie-policy-2.png
 
     <br/>
 
-4. You are now on the Cookie Policy page.
+4. You are now on the _Cookie Policy_ page.
 
     URL changes to - https://www.umangwellness.com/cookiepolicy
 
@@ -31,4 +32,4 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-Once you go through these steps, you should be able to view the details of our Cookie Policy.
+Once you go through these steps, you should be able to view the details of our _Cookie Policy_.

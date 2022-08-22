@@ -15,14 +15,15 @@ The page can be accessed without requiring signin.
     <br/>
 
 2. Scroll to bottom to the footer.
-3. Click on the version number such as v1.3
+
+3. Click on the version number such as **v1.3**.
 
     [![view-version-history-step-2]][view-version-history-step-2]
     [view-version-history-step-2]: ./../img/general/view-version-history-2.png
 
     <br/>
 
-4. You are on the Release Notes Page.
+4. You are on the _Release Notes_ Page.
 
     URL changes to - https://www.umangwellness.com/releasenotes
 
@@ -33,4 +34,4 @@ The page can be accessed without requiring signin.
 
     <br/>
 
-Once you go through these steps, you should be able to view the Version History and see release notes.
+Once you go through these steps, you should be able to view the _Version History_ and see release notes.
