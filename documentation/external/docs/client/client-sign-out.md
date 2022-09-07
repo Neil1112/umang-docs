@@ -2,23 +2,20 @@
 
 ---
 
-This guide shows the process of viewing the Umang Wellness _Social Account Links_.
-The links can be accessed without requiring signin.
+This guide shows the process of _Signing-out_ of your _Client_ login session.
 
 ## Steps
 
-1. Initial Location - Client Dashboard
+1. Initial Location - [Client Dashboard](https://www.umangwellness.com/client/dashboard).
 
-    URL - https://www.umangwellness.com/client/dashboard
+2. Click on the profile icon on the top-right corner to open the dropdown profile menu.
 
-2. Click on the profile icon on the top-right corner to open a dropdown menu.
+3. Click on the Logout link in the dropdown menu.
 
-3. Click on the Logout link in the dropdown menu
+4. You have now **Signed-out** of your account and directed to the Home Page.
 
-4. You are now sign out of your account and directed to the Home Page
-
-    URL changes to - https://www.umangwellness.com
+    URL changes to - _https://www.umangwellness.com_
 
     <br/>
 
-Once you go through these steps, you should be able to connect to Umang Wellness account on the respective social platform.
+Once you go through these steps, you should successfully able to _Sign-Out_ from your _Client_ login session.

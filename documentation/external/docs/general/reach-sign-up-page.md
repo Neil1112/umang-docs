@@ -25,9 +25,9 @@ The page can be accessed without requiring sign-in.
 
     <br/>
 
-5. URL changes to - _https://www.umangwellness.com/client/signup_
+5. URL changes to - _https://www.umangwellness.com/user/signup_
 
-    You can now fill the sign up form, and create a client account.
+    You can now fill the sign up form, and create your user account.
 
     [![reach-sign-up-step-3]][reach-sign-up-step-3]
     [reach-sign-up-step-3]: ./../img/general/reach-sign-up-3.png
