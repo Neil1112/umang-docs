@@ -93,5 +93,7 @@ nav:
       - Take Notes during Session: 'counsellor/take-notes-during-session.md'
       - Request Session Rescheduling: 'counsellor/request-session-rescheduling.md'
       - Mark Session as Completed: 'counsellor/mark-session-as-completed.md'
+    - Business Flow Guide: './business-flow-guide.md'
+    - Semantic Versioning: './semantic-versioning.md'
   
     
