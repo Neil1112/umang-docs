@@ -7,8 +7,5 @@ We have created list of guides to help you get the most out of our platform. Our
 Check the following links to look for guides related to one of these roles and other role-unrelated guides.
 
 
-- [General](./general/index.md)
-- [Client](./client/index.md)
-- [Counsellor](./counsellor/index.md)
 - [Business Flow Guide](./business-flow-guide.md)
 - [Semantic Versioning](./semantic-versioning.md)
