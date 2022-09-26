@@ -76,6 +76,8 @@ Major branches - master, dev and rc 1.1
 The code is divided into 2 major modules - client and server.
 
 
+[![fig-1]][fig-1] [fig-1]: ./../img/general/contact-us-1.png
+
 
 In the above figure, the directory client represents the frontend part. The rest of the directories and files make up the server.
 
