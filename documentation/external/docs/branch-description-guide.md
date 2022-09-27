@@ -26,8 +26,8 @@ There are several resources which are shared by `dev`, `e2e`, `alpha` and `rc` b
 |Resource|Description|
 |------------------|--------------|
 |JWT_SECRET_OR_KEY|NSDevelopers|
-|TWILIO_SMS_ACCOUNT_SID|AC6b8a7f251d357fee94f2e9b203b411fd|
-|TWILIO_SMS_AUTH_TOKEN|efbbf0f42e469bcd62f5f87a821f0c60|
+|TWILIO_SMS_ACCOUNT_SID|_not written due to security reasons_|
+|TWILIO_SMS_AUTH_TOKEN|_not written due to security reasons_|
 |GOOGLEAUTH_CLIENT_ID|92783308442-uts2q3bmagdfbj7br6g7igg48e9qqgk5.apps.googleusercontent.com|
 |GOOGLEAUTH_CLIENT_SECRET|cRoE7ULcMyd63LfqhJve7sds|
 |GOOGLEMAIL_TYPE|service_account|

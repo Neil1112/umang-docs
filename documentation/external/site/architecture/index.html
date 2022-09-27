@@ -1,0 +1,1168 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Tech Stack & Code Architecture/Organisation - Umang Wellness External Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tech-stack-code-architectureorganisation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Umang Wellness External Docs" class="md-header__button md-logo" aria-label="Umang Wellness External Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Umang Wellness External Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tech Stack & Code Architecture/Organisation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Umang Wellness External Docs" class="md-nav__button md-logo" aria-label="Umang Wellness External Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Umang Wellness External Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome to Umang Wellness Guides
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business-flow-guide/" class="md-nav__link">
+        Business Flow Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semantic-versioning/" class="md-nav__link">
+        Semantic Versioning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tech Stack & Code Architecture/Organisation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tech Stack & Code Architecture/Organisation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technologies" class="md-nav__link">
+    Technologies
+  </a>
+  
+    <nav class="md-nav" aria-label="Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-stack" class="md-nav__link">
+    The Stack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-details" class="md-nav__link">
+    Database details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-and-branches" class="md-nav__link">
+    Version Control and Branches
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control and Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+    <nav class="md-nav" aria-label="Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master-branch" class="md-nav__link">
+    master Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-branch" class="md-nav__link">
+    dev Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rc11-branch" class="md-nav__link">
+    rc1.1 Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-architecture-and-organisation" class="md-nav__link">
+    Code Architecture and Organisation
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Architecture and Organisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#server-side" class="md-nav__link">
+    Server Side
+  </a>
+  
+    <nav class="md-nav" aria-label="Server Side">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serverjs" class="md-nav__link">
+    server.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routes-and-controllers" class="md-nav__link">
+    Routes and Controllers
+  </a>
+  
+    <nav class="md-nav" aria-label="Routes and Controllers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#walkthrough-of-an-example-url-apiadminsendcustomemail" class="md-nav__link">
+    Walkthrough of an example URL - api/admin/sendCustomEmail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-routers" class="md-nav__link">
+    List of routers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-directory" class="md-nav__link">
+    Config Directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubworkflows" class="md-nav__link">
+    github/workflows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-side" class="md-nav__link">
+    Client Side
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Side">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson_1" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src-directory" class="md-nav__link">
+    src directory
+  </a>
+  
+    <nav class="md-nav" aria-label="src directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexjs" class="md-nav__link">
+    index.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appjs" class="md-nav__link">
+    App.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hocs" class="md-nav__link">
+    HOCs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexts" class="md-nav__link">
+    contexts
+  </a>
+  
+    <nav class="md-nav" aria-label="contexts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authcontext" class="md-nav__link">
+    AuthContext
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectedcounsellorcontext" class="md-nav__link">
+    SelectedCounsellorContext
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#themecontext" class="md-nav__link">
+    ThemeContext
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branch-description-guide/" class="md-nav__link">
+        Branch Description Guide
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technologies" class="md-nav__link">
+    Technologies
+  </a>
+  
+    <nav class="md-nav" aria-label="Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-stack" class="md-nav__link">
+    The Stack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-details" class="md-nav__link">
+    Database details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-control-and-branches" class="md-nav__link">
+    Version Control and Branches
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control and Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches
+  </a>
+  
+    <nav class="md-nav" aria-label="Branches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master-branch" class="md-nav__link">
+    master Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-branch" class="md-nav__link">
+    dev Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rc11-branch" class="md-nav__link">
+    rc1.1 Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-architecture-and-organisation" class="md-nav__link">
+    Code Architecture and Organisation
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Architecture and Organisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#server-side" class="md-nav__link">
+    Server Side
+  </a>
+  
+    <nav class="md-nav" aria-label="Server Side">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serverjs" class="md-nav__link">
+    server.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routes-and-controllers" class="md-nav__link">
+    Routes and Controllers
+  </a>
+  
+    <nav class="md-nav" aria-label="Routes and Controllers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#walkthrough-of-an-example-url-apiadminsendcustomemail" class="md-nav__link">
+    Walkthrough of an example URL - api/admin/sendCustomEmail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-routers" class="md-nav__link">
+    List of routers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-directory" class="md-nav__link">
+    Config Directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubworkflows" class="md-nav__link">
+    github/workflows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-side" class="md-nav__link">
+    Client Side
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Side">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson_1" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src-directory" class="md-nav__link">
+    src directory
+  </a>
+  
+    <nav class="md-nav" aria-label="src directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexjs" class="md-nav__link">
+    index.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appjs" class="md-nav__link">
+    App.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hocs" class="md-nav__link">
+    HOCs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexts" class="md-nav__link">
+    contexts
+  </a>
+  
+    <nav class="md-nav" aria-label="contexts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authcontext" class="md-nav__link">
+    AuthContext
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectedcounsellorcontext" class="md-nav__link">
+    SelectedCounsellorContext
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#themecontext" class="md-nav__link">
+    ThemeContext
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tech-stack-code-architectureorganisation">Tech Stack &amp; Code Architecture/Organisation</h1>
+<hr />
+<p>This document gives the description of the technologies involved, and the project architecture. </p>
+<h2 id="technologies">Technologies</h2>
+<p>The Project is structured in a <em>Monolith</em> structure. Thus the production (i.e - the master branch) has:</p>
+<ul>
+<li>Single server</li>
+<li>Single remote database</li>
+</ul>
+<h3 id="the-stack">The Stack</h3>
+<p>The tech-stack chosen for the project is the MERN stack. MERN stands for a group of four technologies used in synergy.</p>
+<ul>
+<li>M stands for MongoDB - A NoSQL Database</li>
+<li>E stands for ExpressJS - A minimalist web framework for NodeJS</li>
+<li>R stands for ReactJS - A frontend library</li>
+<li>N stands for NodeJS - A Javascript Runtime Environment</li>
+</ul>
+<h3 id="database-details">Database details</h3>
+<p>MongoDB is chosen as the database for the project. It is a NoSQL database. Its cloud solutioln named MongoDB Atlas is integrated in the project. The details for the current configuration is as follows:</p>
+<ul>
+<li>Database Type - Cloud</li>
+<li>Service Name - MongoDB Atlas</li>
+<li>Cluster Type - Shared</li>
+<li>Cloud Provider - Google</li>
+<li>Region - Mumbai (asia-south-1)</li>
+<li>Cluster Tier - M0 Sandbox</li>
+<li>Cluster Tier Pricing - FREE</li>
+<li>Connection String - mongodb+srv://admin:<em>ENTER_PASSWORD</em>%21@cluster0.x2jgv.gcp.mongodb.net/admin</li>
+</ul>
+<h2 id="version-control-and-branches">Version Control and Branches</h2>
+<p>Git is used as the Version Control System for the Project. It is configured as a private repository on Github.</p>
+<blockquote>
+<p>Github Repository - https://github.com/cjaykumar/umangwellness</p>
+</blockquote>
+<h3 id="branches">Branches</h3>
+<p>There are a total of 6 branches configured in the Project. They are as follows -</p>
+<ol>
+<li>master</li>
+<li>dev</li>
+<li>dev1.1</li>
+<li>rajeev-branch</li>
+<li>rajeev’s-branch</li>
+<li>rc 1.1</li>
+</ol>
+<p>Major branches - master, dev and rc 1.1</p>
+<h4 id="master-branch">master Branch</h4>
+<ul>
+<li>Responsible for LIVE Production code</li>
+<li>Hosted on - Azure Web App Services</li>
+<li>Currently hosted at - https://umangprod.azurewebsites.net</li>
+</ul>
+<h4 id="dev-branch">dev Branch</h4>
+<ul>
+<li>Responsible for Development code</li>
+<li>Hosted on - Azure Web App Services</li>
+<li>Currently hosted at - https://umang-dev.azurewebsites.net</li>
+</ul>
+<h4 id="rc11-branch">rc1.1 Branch</h4>
+<ul>
+<li>Responsible for a standby stable candidate to push immediately to master, if some bug is encountered on the production site</li>
+</ul>
+<h2 id="code-architecture-and-organisation">Code Architecture and Organisation</h2>
+<p>The code is divided into 2 major modules - client and server.</p>
+<p>[![fig-1]][fig-1] [fig-1]: ./../img/general/contact-us-1.png</p>
+<p>In the above figure, the directory client represents the frontend part. The rest of the directories and files make up the server.</p>
+<ul>
+<li>The Approach is SPA - Single Page Application implemented using NodeJS as server side and ReactJS for the frontend.</li>
+<li>The API in the server uses the REST technology with the standard HTTP methods.</li>
+</ul>
+<h3 id="server-side">Server Side</h3>
+<h4 id="serverjs">server.js</h4>
+<ul>
+<li>server.js is the single entry point governing different environments [production, development, test].</li>
+<li>server.js is also responsible for mapping routes to their respective controllers.</li>
+</ul>
+<h4 id="packagejson">package.json</h4>
+<ul>
+<li>The package.json is responsible for maintaining 2 important things - scripts and dependencies</li>
+<li>Scripts are pieces of code which are run in specific scenarios to allow a custom configuration to the code.<ul>
+<li>For example - Scripts can be used to start the server or configure the system into test mode.</li>
+</ul>
+</li>
+<li>Dependencies:<ul>
+<li>Dependencies are mainly pieces of softwares called packages which are developed by other programmers and published on npm.</li>
+<li>Dependencies are of 2 types, namely - dependencies and devDependencies</li>
+<li>devDependencies are specific to particular developer, and should play no role in project development</li>
+</ul>
+</li>
+</ul>
+<h4 id="routes-and-controllers">Routes and Controllers</h4>
+<p>The routes directory is responsible for maintaining and organising various api routes logically.
+It is also responsible for routing a given url to its respective controller.</p>
+<h5 id="walkthrough-of-an-example-url-apiadminsendcustomemail">Walkthrough of an example URL - <em>api/admin/sendCustomEmail</em></h5>
+<p>The above url is responsible for custom emails written by admin to multiple clients and counsellors existing in the system.</p>
+<ol>
+<li>
+<p>The url is parsed by the server.js middleware and will pass it to the appropriate router.</p>
+</li>
+<li>
+<p>The url is then passed to the admin router - adminRouter.</p>
+<ul>
+<li>The adminRouter consists of all the mappings of urls related to admin and their respective controllers.</li>
+<li>The url is also differentiated by its HTTP method type - GET, POST, etc.</li>
+</ul>
+</li>
+<li>
+<p>Finally, according to the url and the HTTP method defined, the router passes the query to its respective controller.</p>
+</li>
+</ol>
+<p>The above figure shows the sendCustomEmailController, which is responsible for sending custom emails to clients and counsellors.</p>
+<h5 id="list-of-routers">List of routers</h5>
+<p>The list of routers currently existing in the system is shown in the figure below</p>
+<h4 id="config-directory">Config Directory</h4>
+<p>The config directory contains files for specific purposes like background services, database urls, environment variables, keys for various packages, etc.</p>
+<h4 id="githubworkflows">github/workflows</h4>
+<ul>
+<li>This directory is responsible for holding github actions workflow file.</li>
+<li>The file dev_umang-dev.yml shown in the below example is responsible for defining all the processes and their precedence of the dev branch whenever a new code is pushed.</li>
+</ul>
+<h4 id="models">Models</h4>
+<ul>
+<li>Models in the code resemble the structure of database collections in MongoDB.</li>
+<li>They are responsible for defining the data-fields, the type related to the data-fields, defining relationships between two models, defining required and default fields, etc.</li>
+<li>
+<p>The list of model currently defined is as follows -</p>
+</li>
+<li>
+<p>Models are used throughout the code for maintaining consistency in the data-fields for a particular document.</p>
+</li>
+</ul>
+<h3 id="client-side">Client Side</h3>
+<p>The client directory contains all the code needed to create and manage the frontend part of the system.</p>
+<p>The structure of the client directory is as follows -</p>
+<ul>
+<li>The directory that is of the most interest to us, is the src directory.</li>
+<li>build, node_modules and public directories are of not that much interest to us.</li>
+<li>package.json is another file that is important to us.</li>
+</ul>
+<h4 id="packagejson_1">package.json</h4>
+<ul>
+<li>The package.json is responsible for maintaining the dependencies and scripts for the client side.</li>
+<li>
+<p>The current package dependencies for the client side is shown in the figure below -</p>
+</li>
+<li>
+<p>The scripts for the client side are shown in the following figure -</p>
+</li>
+<li>
+<p>The two important scripts here are start and sitemap.</p>
+</li>
+<li>start is used to run the client side and sitemap is used to generate a sitemap automatically.</li>
+</ul>
+<h4 id="src-directory">src directory</h4>
+<ul>
+<li>The src directory contains all the important code.</li>
+<li>The directory named assets, contains media files for the pages.</li>
+</ul>
+<h5 id="indexjs">index.js</h5>
+<ul>
+<li>This file, like the server.js, is the single entry point for the client side.</li>
+<li>It is responsible for rendering the root element in the document.</li>
+<li>We abstract its logic in another file named App.js.</li>
+<li>The index.js wraps the App component by AuthProvider and ThemeProvider.</li>
+<li>Thus allowing all the files and components in the app to use the services offered by AuthProvider and ThemeProvider.</li>
+</ul>
+<h5 id="appjs">App.js</h5>
+<ul>
+<li>Like the routing middleware in the server.js which is responsible for matching a given URL to its given controller, the App.js  maps a given URL to its respective UI component.</li>
+<li>It also takes into account what URL requires what kind of role access.</li>
+<li>If the role access requirement is not met, it does not allow the URL to be accessed and falls back to the home page.</li>
+<li>There are 3 types of routes defined - Route, UnPrivateRoute and PrivateRoute<ul>
+<li>Route - It is accessible whether the user is signed in or not. Thus it makes sense to use it for all static pages.</li>
+<li>PrivateRoute - PrivateRoute takes an array of roles as its parameter to determine which role(s) is/are allowed access to a specific URL.</li>
+<li>UnPrivateRoute - While PrivateRoute are only visible after signing in; the UnPrivateRoute cannot be accessed after signing in. They are used for URLs similar to Sign Up, Sign In, Forget Password, etc - which are used only at the time of signing in. Once the user is signed in, these URLs makes no sense, and hence must be hidden from the user</li>
+</ul>
+</li>
+</ul>
+<h4 id="hocs">HOCs</h4>
+<ul>
+<li>The HOC directory stands for - Higher Order Components.</li>
+<li>These are custom components that are made upon existing components to achieve some specific results.</li>
+<li>The HOC includes - NetworkDetector, PrivateRoute and UnPrivateRoute</li>
+<li>The NetworkDetector is responsible for determining active Internet connection. If the Internet somehow goes inactive, the NetworkDetector will let the UI components know about it. The UI component can then handle how it wants to interpret the information and display it to the user.</li>
+<li>PrivateRoute as mentioned earlier, is a mean to provide a role based access to various components</li>
+<li>UnPrivateRoute is a means to disable certain URLs after a user has signed in.</li>
+</ul>
+<h4 id="services">Services</h4>
+<ul>
+<li>Services are meant to abstract and organise the logic for exchanging requests with the server.</li>
+<li>They help us in -<ul>
+<li>Reducing the amount of code caused by repeating the same code by mentioning it at the same place.</li>
+<li>Allowing any component to access the services. Hence allowing the components to concentrate more upon their custom logic.</li>
+<li>Easily Tested and limiting the error to them. Hence components can rely on them without worrying about testing the logic and preventing the errors.</li>
+<li>Allows us to organise all the services related to a particular domain under one hood. For example, we can group all the services offered by Admin under one hood, as can be seen in the below figure.</li>
+</ul>
+</li>
+</ul>
+<h4 id="contexts">contexts</h4>
+<ul>
+<li>The context directory is responsible for maintaining some information and making it accessible across all components.</li>
+<li>There are 3 contexts currently deployed - AuthContext, SelectedCounsellorContext and ThemeContext.</li>
+</ul>
+<h5 id="authcontext">AuthContext</h5>
+<ul>
+<li>AuthContext lets a component know whether a user has signed in or not.</li>
+<li>It also lets the component know what role access the user has.</li>
+<li>It also lets the component know about the selected timezone by the user.</li>
+<li>It lets the components know that the site is under maintenance or is updated to a newer version.</li>
+</ul>
+<h5 id="selectedcounsellorcontext">SelectedCounsellorContext</h5>
+<ul>
+<li>The SelectedCounsellorContext, lets the components of the client know whether the client has selected a counsellor or not.</li>
+<li>If the client has selected the counsellor, then it also let’s the components know the details about the counsellor.</li>
+<li>It is developed to avoid recursive calls to the API for fetching counsellor information everytime a client component requests for it.</li>
+</ul>
+<h5 id="themecontext">ThemeContext</h5>
+<ul>
+<li>The ThemeContext serves as a single destination to mention the theme related fields.</li>
+<li>It also solves the problem of updating the theme everywhere, if it changes.</li>
+<li>It allows us to mention the theme fields at one place, and reuse them in all the components.</li>
+<li>Currently the ThemeContext manages colors, fontFamily, fontSize and a custom theme for buttons, paragraphs, texts, forms, etc.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../semantic-versioning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Semantic Versioning" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Semantic Versioning
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../branch-description-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Branch Description Guide" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Branch Description Guide
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>
