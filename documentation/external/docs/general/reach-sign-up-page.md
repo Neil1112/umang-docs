@@ -7,30 +7,34 @@ The page can be accessed without requiring sign-in.
 
 ## Steps
 
-1. Start from the [Home Page](https://www.umangwellness.com).
+Start from the [Home Page](https://www.umangwellness.com).
 
-2. Click on the **Sign In** button.
+1. Click on the **Sign In** button.
 
     [![reach-sign-up-step-1]][reach-sign-up-step-1]
-    [reach-sign-up-step-1]: ./../img/general/reach-sign-up-1.png
+    [reach-sign-up-step-1]: ./../img/general/reach-sign-up-page/1.png
 
     <br/>
 
-3. URL changes to - _https://www.umangwellness.com/user/signin_
+2. You are now on the Sign In Page.
 
-4. Click on the **Sign Up here**.
+    URL changes to - _https://www.umangwellness.com/user/signin_
+
+
+3. Click on the **Sign Up here**.
 
     [![reach-sign-up-step-2]][reach-sign-up-step-2]
-    [reach-sign-up-step-2]: ./../img/general/reach-sign-up-2.png
+    [reach-sign-up-step-2]: ./../img/general/reach-sign-up-page/2.png
+
 
     <br/>
 
-5. URL changes to - _https://www.umangwellness.com/user/signup_
+4. You are now on the SignUp Page. You can now fill the sign up form, and create your user account.
 
-    You can now fill the sign up form, and create your user account.
+    URL changes to - _https://www.umangwellness.com/user/signup_
 
     [![reach-sign-up-step-3]][reach-sign-up-step-3]
-    [reach-sign-up-step-3]: ./../img/general/reach-sign-up-3.png
+    [reach-sign-up-step-3]: ./../img/general/reach-sign-up-page/3.png
 
     <br/>
 

@@ -12,3 +12,5 @@ Check the following links to look for guides related to one of these roles and o
 - [Counsellor](./counsellor/index.md)
 - [Business Flow Guide](./business-flow-guide.md)
 - [Semantic Versioning](./semantic-versioning.md)
+- [Tech Stack & Code Architecture/Organisation](./architecture.md)
+- [Branch Description Guide](./branch-description-guide.md)
